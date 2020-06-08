@@ -1,0 +1,80 @@
+/* centrirana na sredinu + obrub */
+table {
+  margin-left:auto; 
+  margin-right:auto;
+  border: 4px solid black; 
+}
+
+table, td {
+  border-spacing:0;
+  border-collapse: collapse;
+  text-align: center;
+  vertical-align: middle;
+  margin-bottom: 5px;
+}
+
+/* sređeni kvadratići tablice */
+td {
+  position: relative;
+  border: 1px solid black;
+  height: 70px;
+  width: 70px;
+  font-size: 40px;
+  text-align: center;
+  display: table-cell;
+}
+
+
+
+/* podbljavanje pravokutnika */
+tr:first-child td {
+  border-top: 4px solid black;
+}
+tr:nth-child(2n) td {
+  border-bottom: 4px solid black;
+}
+td:first-child {
+	border-left: 4px solid black;
+}
+td:nth-child(3n) {
+	border-right: 4px solid black;
+}
+
+/* boja unešenih brojeva */
+td.podebljan h2 {
+    font-weight: bold;
+}
+td.crven{
+  color: red;
+}
+td.plav {
+  color: blue;
+}
+
+/* boja slova pri ispisu greške */
+.greska{
+    color: red;
+}
+
+
+h1, p, form {
+  text-align: center;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* izgled i pozicija svih mogucih brojeva u tablici */
+.moguci_brojevi {
+    position: absolute;
+    font-size: 10px;
+    color: black;
+    left: 0px;
+    bottom: 5px;
+    height: 10px;
+    width: 70px;
+}
+  
